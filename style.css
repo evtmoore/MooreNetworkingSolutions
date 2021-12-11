@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #4081ff;
+    padding-bottom: 100px;
+}
+
+nav{
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    background-color: darkgray;
+}
+.logo{
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 60px;
+    width: 80px;
+}
+
+.logo img{
+    height: 60px;
+    width: 80px;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+.description img{
+    height: 350px;
+    width: 700px;
+    padding-left: 20px;
+}
+
+
+.menuIcon {
+    height: 100%;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    z-index: 200;
+}
+
+.menu{
+    position: fixed;
+    right: -150px;
+    top: 60px;
+    font-size: 20px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    justify-content: space-evenly;
+    color: white;
+    background-color: lightskyblue;
+    min-height: 150px;
+    transition: 0.125s;
+    cursor: pointer;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    position: fixed;
+    height: 60px;
+    padding-top: 20px;
+    font-size: 20px;
+
+}
+
+.bar{
+    height: 5px;
+    width: 60%;
+    background-color: white;
+    z-index: 200;
+}
+
+a:hover{
+    text-decoration: none;
+    color: orangered;
+    padding-inline: 10px;
+    font-size: 23px;
+    transition: 0.3s;
+}
+
+a{
+    left: 0;
+    top: 0;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    z-index: 200;
+    margin-right: 20px;
+}
+
+footer{
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    color: white;
+    background-color: darkgray;
+    height: 60px;
+    left: 0;
+    bottom: 0;
+    padding-top: 15px;
+    font-family: "Agency FB";
+}
+.description{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 300px;
+    margin-right: 100px;
+    margin-top: 50px;
+    height: 500px;
+    width: 1000px;
+}
+.description1{
+    line-height: 2;
+    text-indent: 25px;
+    width: 400px;
+    font-family: 'Agency FB';
+    font-size: 20px;
+}
+.description2{
+    line-height: 2;
+    text-indent: 25px;
+    width: 350px;
+    font-family: 'Agency FB';
+    font-size: 20px;
+}
+.content{
+    width: 100%;
+    height: 1000px;
+    color: white;
+    padding-top: 300px;
+    margin-bottom: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.content1{
+    width: 100%;
+    height: 700px;
+    color: white;
+    padding-top: 100px;
+    margin-bottom: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.splash img{
+    height:100%;
+    width:100%;
+    z-index:-1;
+    position: fixed;
+    top:0;
+    left:0;
+}
+.splash{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    z-index: 200;
+    color: white;
+    text-align: center;
+    line-height: 90vh;
+}
+.splash.display-none{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    z-index: 0;
+    color: white;
+    text-align: center;
+    line-height: 90vh;
+    transition: all 1.5s;
+}
+.splash h1{
+    font-family: "Agency FB";
+    font-size: 50px;
+}
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+}
+
+.fade-in{
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=submit]:hover {
+    background-color: #4081ff;
+}
+
+.contactbox{
+    padding: 20px;
+    left: 45%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    position: fixed;
+    width: 50%;
+    top: 80px;
+
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: "Agency FB";
+    font-size: large;
+
+
+}
+.card img{
+    height: 300px;
+    width: 300px;
+}
+.price {
+    color: white;
+    font-size: 22px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+    font-family: "Agency FB";
+    margin-top: 20px;
+}
+
+.card button:hover {
+    opacity: 0.7;
+}
+
+#more{ display: none;
+}
+
+#more1{ display: none;
+}
+#more2{ display: none;
+}
+#more3{display: none;
+}
+
+#emails{
+    margin-left: 20px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+#socials{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: orangered;
+    color: white;
+}
+.content3{
+    color: white;
+    box-sizing: border-box;
+    padding-top: 80px;
+}
+
+
+
+.bg-text {
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    font-family: "Agency FB";
+}
