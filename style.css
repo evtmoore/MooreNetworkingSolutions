@@ -65,6 +65,7 @@ nav{
     min-height: 150px;
     transition: 0.125s;
     cursor: pointer;
+    z-index: 200;
 }
 .links{
     display: flex;
